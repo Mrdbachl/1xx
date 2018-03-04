@@ -8,3 +8,6 @@ inside out version 100.0
 inside out version 100.1  
   -added footer resize functionality
   -added JQuery, popper
+  
+inside out version 100.2
+  -fixed the footer by adjusting the bootstrap column widths wrapping them inside a bootstrap row
