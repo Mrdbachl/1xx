@@ -22,25 +22,28 @@ function init() {
 		method: 'GET',
 		url: 'assets/data/menu.json',
 		dataType: 'json',
-		 success: function (data){
+		 success: function (data) {
 			 
-			 var menu = menuBuilder (data.menu);
+			 var menu = menuBuilder(data.menu);
 			 
 			 $('nav').append(menu);
 			
 		 },
-		error : function () {
+		error: function () {
+			
 			 console.log('all is not good');
+			
 		}
 	});
 	
 }
 
-function menuBuilder (obj){
+
+function menuBuilder(obj) {
 	
 	var theMenu = '';
 	
-	if (obj.length > 0){
+	if (obj.length > 0) {
 		
 		theMenu = theMenu + '<ul>';
 		
@@ -58,9 +61,9 @@ function menuBuilder (obj){
 			
 					});
 		
-		theMenu = theMenu + '<ul>';
+		theMenu = theMenu + '</ul>';
 		
-	}else{
+	} else {
 		
 		console.log('no data');
 		
