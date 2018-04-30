@@ -1,5 +1,5 @@
 // JavaScript Document
-
+var crap = ["me", "you", "them"];
 window.onload = init();
 
 function init() {
